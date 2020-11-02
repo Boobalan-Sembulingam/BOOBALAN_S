@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Flexbox Model
+    </title>
+    <style>
+.container-1{
+    background-image:url(img1.jfif) ;   
+    position:relative;
+    display: flex;
+    flex-direction:column;
+    
+}
+.item-1-1 {
+    color: white;
+    padding:10px;
+   font-size: 50px;
+   text-shadow: 2px 2px 2px black;
+   margin:30px 30px 0px 35px;
+}
+.item-1-2{
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+    margin: 0px 30px 40px 35px;
+
+}
+.item-1-3{
+position: absolute;
+left:750px;
+top: 110px;
+display: flex;
+flex-direction:row;
+}
+.item-1-3-1{
+    background-color: white;
+    color:rgb(31, 31, 71);
+    padding: 10px;
+    margin: 10px;
+    font-size:large;
+}
+.container-2{
+     display: flex;
+    flex-direction: column;
+    
+}
+.item-2-1{
+    margin: 20px 20px 0px 20px;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(3, 145, 3);
+}
+.item-2-2{
+    margin:10px 100px 20px 320px;
+    font-size: 20px;
+    width: 640px;
+    line-height: 40px;
+}
+.container-3{
+    height: 1000px;
+    background-color: blueviolet;
+   
+    position: relative;
+
+}
+.item-3-1{
+    display: flex;
+    width: 970px;
+    flex-direction: row;
+    margin: 20px 20px 20px 40px;
+    background-color: white;
+    position: absolute;
+    left: 80px;
+    top:30px;
+    border-radius: 45px;
+}.item-3-1-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top:30px;
+    left: 300px;
+   }
+   .item-3-1-3{
+       padding: 0px 10px 0px 10px;
+   }
+.item-3-2{
+    position: absolute;
+    left: 350px;
+    top:300px;
+    color: white;
+    width: 500px;
+    padding: 20px;
+}
+.item-3-2-1{
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+}
+.item-3-2-2{
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    line-height: 25px;
+}
+.item-3-2-3{
+    font-size: 15px;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    margin-left: 140px;
+    background-color: rgb(243, 87, 87);
+    border-radius: 30px;
+}
+.item-3-3{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left:125px;
+   top:700px ;
+}
+.item-3-3-1{
+    width: 320px;
+    height:250px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+}
+.item-3-3-2{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+.item-3-3-3{
+    padding: 15px;
+    text-align: center;
+}
+.container-4{
+    position:relative;
+}
+.item-4-1{
+position: absolute;
+top: 100px;
+left:180px;
+}
+.item-4-2{
+    position: absolute;
+    top: 130px;
+    left:700px;
+    width: 450px;
+}
+.item-4-3{
+    position: absolute;
+    top: 630px;
+    left:100px;
+    width: 450px;
+}
+.item-4-4{
+    position: absolute;
+    top: 500px;
+    left:750px;
+
+}
+.container-5{
+    position: relative;
+    top: 900px;
+    height: 550px;
+
+    background-color: blueviolet;
+}
+.item-5-1{
+   position: absolute;
+   left: 400px;
+   top: 100px;
+   width: 400px;
+   text-align: center;
+
+}
+.item-5-2{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+   left:100px;
+   top: 270px;
+   padding: 10px;
+}
+.item-5-2-1{
+    align-items: center;
+    width: 150px;
+    height: 165px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 10px 10px  violet;
+}
+.container-6{
+position: relative;
+top: 900px;
+height: 600px;
+}
+.item-6-1{
+    position: absolute;
+   left:370px;
+   top: 100px;
+   width: 450px;
+   text-align: center;
+}
+.item-6-2{
+    position: absolute;
+   left:110px;
+   top: 250px;
+   height: 250px;
+   display: flex;
+   flex-direction: row;
+}
+.item-6-2-1{
+  width: 300px; 
+  padding: 10px;
+  height: 250px;
+  background-color: rgb(226, 224, 224);
+  margin-left: 20px;
+  border-radius: 20px;
+}
+.container-7{
+position: relative;
+top:1600px;
+display: flex;
+flex-direction: row;
+height: 250px;
+color: white;
+background-color:blueviolet;
+
+}
+.item-7-1{
+width: 200px;
+position: absolute;
+left:180px;
+top:60px;
+margin: 20px;
+text-align: center;
+}
+.item-7-2{
+width: 200px;
+position: absolute;
+left:380px;
+top:60px;
+margin: 20px;
+text-align: center;
+}
+.item-7-3{
+width: 200px;
+position: absolute;
+left:600px;
+top:60px;
+margin: 20px;
+text-align: center;
+}
+.item-7-4{
+width: 200px;
+position: absolute;
+left:850px;
+top:60px;
+margin: 20px;
+text-align: center;
+}
+.container-8{
+    position: relative;
+    top:1620px ;
+    height: 550px;
+    background-color: rgb(238, 233, 241);
+    
+}
+.item-8-1{
+    position: absolute;
+    top: 120px;
+    left:350px;
+    width: 500px;
+    text-align: center;
+}
+.item-8-2{
+    position: absolute;
+    top: 240px;
+    left: 130px;
+    text-align: center;
+}
+input{
+width: 300px;
+height: 20px;
+margin: 0px 10px 10px 10px;
+border-color: white;
+border-radius: 20px;
+padding: 10px;
+outline:none;
+}
+.container-9{
+    position: relative;
+    top: 1630px;
+    height: 140px;
+    background-color: rgb(164, 68, 253);
+}
+.item-9-1{
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    width: 80%;
+}
+.item-9-2{
+    position: absolute;
+    top: 100px;
+    left:430px;
+    text-align: center;
+}
+.container-10 {
+  display: flexbox;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(243, 240, 240);
+}
+.item-10-1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 30px auto;
+  border-radius: 8px;
+  padding: 10px;
+}
+.item-10-1-1 {
+  background-color: white;
+  margin-left: 2%;
+  justify-content: center;
+  padding: 10px;
+  width: 20vw;
+  height: 45vh;
+  border-radius: 5%;
+  align-items: center;
+  
+}
+.item-10-1-1 h3 {
+  align-self: center;
+  text-align: center;
+}
+
+ </style>
+    <body>
+        <div class="container-1">
+            <div class="item-1-1">
+                templatemo
+            </div>
+            <div class="item-1-2">
+                Free HTML5 CSS Website Templates
+            </div>
+            <div class="item-1-3">
+                <div class="item-1-3-1">Free Templates </div>
+                <div class="item-1-3-1">HTML Templates</div>
+                <div class="item-1-3-1">Links</div>
+                <div class="item-1-3-1">Contact</div>
+            </div>
+         </div>
+
+        <div class="container-2">
+            <hr style="color: black;">
+             <div class="item-2-1">Softy Pinko Template</div>
+             <div class="item-2-2">Softy Pinko is a Bootstrap 4.0 Theme designed for your business or digital marketing website. It has a beautiful pink purple gradient background header. Standard section elements are included. Pricing Tables are provided for your clients. Simple HTML contact form is included. Bootstrap v4.3.1 is used for this CSS layout.</div>
+        </div>
+        <div class="container-3">
+           <div class="item-3-1">
+            <div class="item-3-1-1">
+             <img src="sp-img1.png" style="height: 65px;width: 130px; margin-top: 10px;margin-left: 21px;">
+            </div>
+            <div class="item-3-1-2"> 
+             <div class="item-3-1-3" style="color:pink;">Home</div>
+             <div class="item-3-1-3">About</div>
+             <div class="item-3-1-3">Work process</div>
+             <div class="item-3-1-3">Testimonial</div>
+             <div class="item-3-1-3">Pricing tables</div>
+             <div class="item-3-1-3">Blog entries</div>
+             <div class="item-3-1-3">Contact  us</div>
+            </div>
+           </div>
+          <div class="item-3-2">
+              <div class="item-3-2-1">We provide the best strategy to grow up your buiseness</div>
+              <div class="item-3-2-2">softy pinko is a professional Bootsrap 4.0 theme designed by Template Mo for your company at absolutely free of cost</div>
+              <div class="item-3-2-3">Discover More</div>
+
+          </div>
+          <div class="item-3-3">
+            <div class="item-3-3-1">
+             <img src="sp-img2.png" style="margin-left: 100px;margin-top: 20px;">
+                <div class="item-3-3-2"> Modern Strategy</div>
+                <div class="item-3-3-3">costomise anything in this template to fit your website needs</div>
+            </div> 
+            <div class="item-3-3-1">
+                <img src="sp-img2.png" style="margin-left: 100px;margin-top: 20px;">
+                <div class="item-3-3-2">Best Relationship</div>
+                <div class="item-3-3-3">contact us immediately if you have question in your mind</div>
+            </div> 
+            <div class="item-3-3-1">
+                <img src="sp-img2.png" style="margin-left: 100px;margin-top: 20px;">
+                <div class="item-3-3-2">Ultimate Marketing</div>
+                <div class="item-3-3-3">you just need to tell your friends about our free templates</div>
+
+            </div> 
+          </div>
+          </div>
+          <div class="container-4">
+              <div class="item-4-1">
+                  <img src="sp-img3.png">
+              </div>
+              <div class="item-4-2">
+                  <div style="font-size:25px;">Let discuss about your project</div>
+                <div style="margin-top: 25px;line-height: 25px;">When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. </div>
+                </div>
+                <hr>
+              <div class="item-4-3">
+                  <div style="font-size:25px;">We can help you to grow your business</div>
+                  <div style="margin-top: 25px;line-height: 25px;">The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent</div>
+              </div>
+              <div class="item-4-4">
+                  <img src="sp-img4.png">
+              </div>
+            </div>
+            <div class="container-5">
+             <div class="item-5-1" style="color: white;padding: 10px;">
+             <div class="item-5-1-1" style="font-size: 28px;padding: 10px;">Work process</div>
+             <div class="item-5-1-2" style="font-size: 15px;padding: 10px;line-height: 25px;">The first flex item in the code does not have to appear as the first item in the layout.</div>
+            </div>
+             <div class="item-5-2">
+             <div class="item-5-2-1">
+             <img src="sp-img5.png" style="margin-left: 50px;">
+             <div style="text-align: center;margin: 10px 0px 10px 0px;"><b>Get Ideas</b></div>
+             <div style="text-align: center;line-height: 25px;">third flex item grow eight times </div>
+             </div>
+             <div class="item-5-2-1">
+                <img src="sp-img5.png" style="margin-left: 50px;" >
+                <div style="text-align: center;margin: 10px 0px 10px 0px;"><b>Sketch Up</b></div>
+                <div style="text-align: center;line-height: 25px;">third flex item grow eight times</div>
+             </div>
+             <div class="item-5-2-1">
+                <img src="sp-img5.png" style="margin-left: 50px;">
+                <div style="text-align: center;margin: 10px 0px 10px 0px;"><b>Discuss</b></div>
+                <div style="text-align: center;line-height: 25px;">third flex item grow eight times </div>
+             </div>
+             <div class="item-5-2-1">
+                <img src="sp-img5.png" style="margin-left: 50px;">
+                <div style="text-align: center;margin: 10px 0px 10px 0px;"><b>Revise</b></div>
+                <div style="text-align: center;line-height: 25px;">third flex item grow eight times </div>
+             </div>
+             <div class="item-5-2-1">
+                <img src="sp-img5.png" style="margin-left: 50px;">
+                <div style="text-align: center;margin: 10px 0px 10px 0px;"><b>Approve</b></div>
+                <div style="text-align: center;line-height: 25px;">third flex item grow eight times </div>
+             </div>
+             <div class="item-5-2-1">
+                <img src="sp-img5.png" style="margin-left: 50px;">
+                <div style="text-align: center;margin: 10px 0px 10px 0px;"><b>Launch</b></div>
+                 <div style="text-align: center;line-height: 25px;">third flex item grow eight times </div>
+             </div>
+             </div>
+             </div>
+             <div class="container-6">
+                 <div class="item-6-1">
+                    <div style="font-size: 30px; padding: 10px;">What do they say?</div>
+                     <div style="font-size: 17px;">The opacity property is often used together with the hover selector to change the opacity on mouse</div>
+
+                 </div>
+                 <div class="item-6-2">
+                    <div class="item-6-2-1">
+                        <img src="sp-img6.png" style="margin-left: 120px;margin-top: 10px;">
+                        <div style="text-align: center;line-height: 25px;">The first CSS block is similar to the code in Example 1. In addition, we have added what should happen when a user hovers over one of the images.</div>
+                       <div style="line-height: 25px;text-align: center;margin-top: 10px;"><b> Kelvin Wood</b></div><div style="line-height: 25px;text-align: center;color: rgb(248, 117, 139);"> Web Designer</div>
+                    </div>
+                    <div class="item-6-2-1">
+                        <img src="sp-img6.png" style="margin-left: 120px;margin-top: 10px;">
+                        <div style="text-align: center;line-height: 25px;">The first CSS block is similar to the code in Example 1. In addition, we have added what should happen when a user hovers over one of the images.</div>
+                        <div style="line-height: 25px;text-align: center;margin-top: 10px;"><b>Catherine Soft</b></div><div style="line-height: 25px;text-align: center;color: rgb(248, 117, 139)"> Digital Marketer</div>
+                    </div>
+                    <div class="item-6-2-1">
+                        <img src="sp-img6.png" style="margin-left: 120px;margin-top: 10px;">
+                        <div style="text-align: center;line-height: 25px;">The first CSS block is similar to the code in Example 1. In addition, we have added what should happen when a user hovers over one of the images.</div>
+                     <div style="line-height: 25px;text-align: center;margin-top: 10px;"><b>David Martin</b></div><div style="line-height: 25px;text-align: center;color: rgb(248, 117, 139)"> Managing Directer</div>
+                    </div>
+                 </div>
+
+        </div>
+        <div class="container-7">
+            <div class="item-7-1" style="font-size: 40px;">127<br>Projects</div>
+            <div class="item-7-2" style="font-size: 40px;">63<br>Clients</div>
+            <div class="item-7-3" style="font-size: 40px;">18<br>Award wins</div>
+            <div class="item-7-4" style="font-size: 40px;">27<br>Countries</div>
+        </div>
+        <div class="container-8">
+        <div class="item-8-1">
+          <div style="font-size: 30px; line-height: 30px;">Talk to us</div>
+          <div style="font-size: 15px; line-height: 25px;margin-top: 15px;">Gaius Cilnius Maecenas was a friend and political advisor to Octavian,
+            who later reigned as Augustus.</div>
+        </div>
+        <div class="item-8-2">
+        <form>
+            <label for="first name"><b>Name:</b></label>
+         <input type="text" id="first name" placeholder="fullname">
+         
+         <input type="email" id="email" placeholder="E-Mail address"><br>
+         <label for="suggestion"><b>Give Feedback: </b></label>
+         <input type="textarea" id="suggestion" placeholder="type message" style="height: 50px;margin-right: 420px;"><br>
+        <input type="submit" value="send message" style="background-color: violet;margin-right: 510px;width: 120px;height:40px;">
+
+        </form>
+        </div>
+        </div>
+        <div class="container-9">
+            <div class="item-9-1">
+            <img src="sp-img7.png" style="margin-left:400px ;">
+            <img src="sp-img8.png">
+            <img src="sp-img9.png">
+            <img src="sp-img10.png">
+            <img src="sp-img11.png">
+        <hr>    
+             </div>
+            <div class="item-9-2" style="color: white;">
+            <div>copyright @ 2020 softy pinko company-Design: templatemo</div>
+            </div>
+         </div>
+       
+         <div class="container-10">
+            <h1>Pricing Plan</h1>
+            <p style="color:grey">
+              Donec tempus,right tone,sem non return.at accumsan elit<br> eros atrurpis
+              congue risus volutpat
+            </p>
+                <div class="item-10-1">
+            <div class="item-10-1-1">
+              <h2>Starter</h2>
+              <button style="width:210px;border-radius: 10px;padding:15px;background-color: rgb(179, 119, 233);border: none;color:white;line-height: 20px;font-size: 15px;">$15.50 <br>monthly</button>
+              <h3>60 Gb space</h3>
+              <h3>600 Gb transfer</h3>
+              <h3 style="text-decoration: line-through;">Pro design panel</h3>
+              <h3 style="text-decoration: line-through;">15 min</h3>
+              <button style="width:150px;border-radius: 20px;background-color: rgb(179, 119, 233);padding:10px;border: none;color:white;">PURCHASE NOW</button>
+            </div>
+            <div class="item-10-1-1">
+              <h2>Premium</h2>
+              <button style="width:210px;border-radius: 20px;background-color: rgb(248, 25, 248);padding:15px;border: none;color:white;line-height: 20px;font-size: 15px;">$21.50 <br>monthly</button>
+              
+              <h3>60 Gb space</h3>
+              <h3>600 Gb transfer</h3>
+              <h3>Pro design panel</h3>
+              <h3 style="text-decoration: line-through;">15 min</h3>
+              <button style="width:150px;border-radius: 20px;background-color: rgb(248, 25, 248);padding:10px;border: none;color:white">PURCHASE NOW</button>
+              
+            </div>
+            <div class="item-10-1-1">
+              <h2>Advanced</h2>
+              <button style="width:210px;border-radius: 20px;background-color :rgb(179, 119, 233);padding:15px;border: none;color:white;line-height: 20px;font-size: 15px;">$45.50 <br>monthly</button>
+              <h3>60 Gb space</h3>
+              <h3>600 Gb transfer</h3>
+              <h3>Pro design panel</h3>
+              <h3>15 min</h3>
+              <button style="width:150px;border-radius: 20px;background-color: rgb(179, 119, 233);padding:10px;border: none;color:white">PURCHASE NOW</button>
+            </div>
+          </div>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </body>
+</html>
